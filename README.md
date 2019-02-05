@@ -2,9 +2,9 @@
 ZMQ-SUB socket Python simulation
 
 # reference
-- [zmq](http://zguide.zeromq.org/)
-- [minimum zmtp](https://github.com/zeromq/zmtp/tree/master/zmtp30/C)
-- [zmtpWireshark](https://github.com/whitequark/zmtp-wireshark/blob/master/zmtp-dissector.lua)
+- [zmq guide](http://zguide.zeromq.org/)
+- [minimum zmtp stuff](https://github.com/zeromq/zmtp/tree/master/zmtp30/C)
+- [zmtp Wireshark dissector](https://github.com/whitequark/zmtp-wireshark/blob/master/zmtp-dissector.lua)
 
 ## Python sockets as subscriber <---> Pyzmq as publisher
 
