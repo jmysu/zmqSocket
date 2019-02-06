@@ -1,5 +1,6 @@
 # zmqSocket
-ZMQ-SUB socket Python simulation
+  ZMQ-SUB socket Python simulation
+  使用Phthon sockets 模擬ZMTP-SUB的Greeting/Handshake 並接收訂閱資料
 
 # References
 - [zmq guide](http://zguide.zeromq.org/)
