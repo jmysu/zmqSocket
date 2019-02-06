@@ -1,5 +1,5 @@
 # zmqSocket
-  ZMQ-SUB socket Python simulation<br/>
+  ZMQ-SUB socket Python simulation, traffic dissection<br/>
   使用Phthon sockets模擬ZMTP-SUB的Greeting/Handshake 並接收訂閱資料
   <br/>
   
@@ -16,5 +16,5 @@
 ### ZMQ-SUB Python Simulation
 ![SocketSub](pictures/zmqSocketSub.png)
 
-### ZMQ-SUB Python Simulation Wireshark ZMTP traffics
+### ZMQ-SUB Python Simulation Wireshark ZMTP Traffics
 ![SocketSub](pictures/zmqSocketSubWireshark.png)
