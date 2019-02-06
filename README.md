@@ -1,6 +1,6 @@
 # zmqSocket
-  ZMQ-SUB socket Python simulation, traffic dissection<br/>
-  使用Phthon sockets模擬ZMTP-SUB的Greeting/Handshake 並接收訂閱資料
+  ZMQ-PUB/SUB socket Python simulation, traffic dissection<br/>
+  使用Phthon sockets模擬ZMTP-PUB/SUB的Greeting/Handshake 並發送接收訂閱資料
   <br/>
   
 # References
@@ -9,9 +9,17 @@
 - [zmtp Wireshark dissector](https://github.com/whitequark/zmtp-wireshark/blob/master/zmtp-dissector.lua)
 
 ## Python sockets as subscriber <---> Pyzmq as publisher
+## Python sockets as publisher <---> Pyzmq as subscriber
 訂閱端 只使用 sockets <---> 派送端 用Pyzmq 發送 
+派送端 只使用 sockets <---> 訂閱端 用Pyzmq 發送 
 <br/>
 <br/>
+
+### ZMQ-PUB Python Simulation
+![SocketSub](pictures/sktPub.png)
+
+### ZMQ-PUB Python Simulation Wireshark ZMTP Traffics
+![SocketSub](pictures/sktPubWireshark.png)
 
 ### ZMQ-SUB Python Simulation
 ![SocketSub](pictures/zmqSocketSub.png)
