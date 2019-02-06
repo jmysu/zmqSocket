@@ -10,8 +10,8 @@
 
 ## Python sockets as subscriber <---> Pyzmq as publisher
 ## Python sockets as publisher <---> Pyzmq as subscriber
-訂閱端 只使用 sockets <---> 派送端 用Pyzmq 發送 <br/>
-派送端 只使用 sockets <---> 訂閱端 用Pyzmq 發送 <br/>
+訂閱端 只使用 sockets (sktSub.py) <---> (zmqPub.py) 派送端 用Pyzmq 發送 <br/>
+派送端 只使用 sockets (sktPub.py) <---> (zmqSub.py) 訂閱端 用Pyzmq 發送 <br/>
 <br/>
 
 ### ZMQ-PUB Python Simulation
