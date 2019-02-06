@@ -18,10 +18,12 @@
 ![SocketSub](pictures/sktPub.png)
 
 ### ZMQ-PUB Python Simulation Wireshark ZMTP Traffics
+Publisher: color in red
 ![SocketSub](pictures/sktPubWireshark.png)
 
 ### ZMQ-SUB Python Simulation
 ![SocketSub](pictures/zmqSocketSub.png)
 
 ### ZMQ-SUB Python Simulation Wireshark ZMTP Traffics
+Subscriber: color in blue
 ![SocketSub](pictures/zmqSocketSubWireshark.png)
