@@ -1,0 +1,21 @@
+//  ZMTP 3.0 subscriber proof-of-concept
+//  Implements http://rfc.zeromq.org/spec:23 with NULL mechanism
+
+//  Connect to publisher
+//  Keep trying to connect until we succeed
+
+    //  Send first ten bytes of greeting to peer
+    //  { 0xFF, 0, 0, 0, 0, 0, 0, 0, 1, 0x7F }
+        //  Read greeting from peer
+        //  If version >= 3, the peer is using ZMTP 3.0, so send
+        //  rest of the greeting and continue with ZMTP 3.0.
+        //  Get remainder of greeting from peer
+    //  Do NULL handshake - send READY command
+
+        //  Send subscription to peer
+        //  send {0x00, 0x01, 0x01}
+        
+            //  Get broadcast until it's done
+            ...
+
+    //  Close peer
