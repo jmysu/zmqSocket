@@ -28,5 +28,6 @@ Publisher: color in red
 Subscriber: color in blue
 ![SocketSub](pictures/zmqSocketSubWireshark.png)
 
-### ESP32 project also works for ZMTP3 Publish
+### (NEW) ESP32 project works for ZMTP3 Publish
+ESP32 using Arduino WiFiClient to send ZMTP3 messages...
 ![ESP32 zSocket](pictures/zmqESP32.png)
