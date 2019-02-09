@@ -1,6 +1,6 @@
-# zmqSocket ZMTP sockets simulation
-  ZMQ-PUB/SUB socket Python simulation, traffic dissection<br/>
-  使用Python sockets模擬ZMTP-PUB/SUB的Greeting/Handshake並發送接收訂閱資料
+# zmqSocket ZMTP3 minimum implementation
+  ZMTP3-SUB/PUB  Python/ArduinoC++<br/>
+  使用Python/Arduino sockets模擬ZMTP3-PUB/SUB的Greeting/Handshake並發送接收訂閱資料
   <br/>
   
 # References
