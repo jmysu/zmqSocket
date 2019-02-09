@@ -7,6 +7,7 @@
 - [zmq guide](http://zguide.zeromq.org/)
 - [minimum zmtp stuff](https://github.com/zeromq/zmtp/tree/master/zmtp30/C)
 - [zmtp Wireshark dissector](https://github.com/whitequark/zmtp-wireshark/blob/master/zmtp-dissector.lua)
+- [zmtp RFC spec](https://rfc.zeromq.org/spec:23/ZMTP/)
 
 ## Python sockets as subscriber <---> Pyzmq as publisher
 ## Python sockets as publisher <---> Pyzmq as subscriber
