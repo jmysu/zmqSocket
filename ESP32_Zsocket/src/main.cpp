@@ -11,9 +11,9 @@
 const uint16_t port = 23456;
 const char * host = "192.168.0.15";
 
-const char zGreetingSig[10] = { 0xFF, 0, 0, 0, 0, 0, 0, 0, 1, 0x7F };
-const char zGreetingVer[2]  = { 3, 0};
-const char zGreetingEnd[52] = { 'N','U','L','L',  0,0,0 };
+const char zGreetingSigVer[11] = { 0xFF, 0, 0, 0, 0, 0, 0, 0, 1, 0x7F, 3 }; //ZMTP3 Greeting Signature
+//const char zGreetingVer[2]  = { 3, 0};
+const char zGreetingEnd[53] = { 0, 'N','U','L','L',  0,0,0 };
 const char zReadyPUB[27]    = { 0x04,0x19,0x05,0x52,0x45,0x41,0x44,0x59,0x0B,0x53, 
                                 0x6F,0x63,0x6B,0x65,0x74,0x2D,0x54,0x79,0x70,0x65,0x00,0x00,0x00,
                                 0x03,0x50,0x55,0x42
@@ -50,7 +50,7 @@ void loop()
         return;
         }
     Serial.printf("\nConnected to %s:%d successful!\n\n", host, port);
-    client.write(zGreetingSig, sizeof(zGreetingSig));
+    client.write(zGreetingSigVer, sizeof(zGreetingSigVer));
     while (client.connected()) {
       int iBytes = client.readBytes(zBuf, 16); //read data into zBuf
       if (iBytes) {  
@@ -60,9 +60,9 @@ void loop()
           }
         Serial.println("|");     
         //Check zGreeting-------------------------------------------  
-        if (memcmp(zBuf, zGreetingSig, sizeof(zGreetingSig)) == 0) {
-          Serial.println("Got zGreeting!");
-          client.write(zGreetingVer, sizeof(zGreetingVer)); //Send Ver
+        if (memcmp(zBuf, zGreetingSigVer, sizeof(zGreetingSigVer)) == 0) {
+          Serial.println("Got zGreeting3!");
+          //client.write(zGreetingVer, sizeof(zGreetingVer)); //Send Ver
           client.write(zGreetingEnd, sizeof(zGreetingEnd)); //Send Mech
           client.write(zReadyPUB, sizeof(zReadyPUB));       //Send Ready PUB 
           }
