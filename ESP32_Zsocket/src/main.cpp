@@ -1,13 +1,16 @@
+/*
+  Arduino ESP32 ZMTP3 Publisher
+*/
 #include <Arduino.h>
 #include <WiFi.h>
- 
-const char* ssid = "BreezeHill999";
-const char* password =  "0806-449";
+
+//const char* ssid = "SSID";
+//const char* password =  "PASSWORD"; 
+
  
 const uint16_t port = 23456;
 const char * host = "192.168.0.15";
-int iCnt = 999;
-bool bStartPub = false;
+
 const char zGreetingSig[10] = { 0xFF, 0, 0, 0, 0, 0, 0, 0, 1, 0x7F };
 const char zGreetingVer[2]  = { 3, 0};
 const char zGreetingEnd[52] = { 'N','U','L','L',  0,0,0 };
@@ -22,6 +25,8 @@ const char zReadySUB[27]    = { 0x04,0x19,0x05,0x52,0x45,0x41,0x44,0x59,0x0B,0x5
 const char zSubStart[3]     = {0x00, 0x01, 0x01};       
 char zMsgHead[2]            = {0x00, 0x00};                  
 char zBuf[256];
+int iCnt = 9999;
+bool bStartPub = false;
 
 void setup()
 {
@@ -72,7 +77,7 @@ void loop()
         sprintf(msg, "zMessage-%04d", iCnt++);
         zMsgHead[1] = strlen(msg);
         client.write(zMsgHead, sizeof(zMsgHead));
-        client.write(msg, strlen(msg)+2);
+        client.write(msg, strlen(msg));
         Serial.println(msg);
         }    
       }    
