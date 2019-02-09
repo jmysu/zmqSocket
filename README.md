@@ -27,3 +27,6 @@ Publisher: color in red
 ### ZMQ-SUB Python Simulation Wireshark ZMTP Traffics
 Subscriber: color in blue
 ![SocketSub](pictures/zmqSocketSubWireshark.png)
+
+### ESP32 project also works for ZMTP3.0 Publish
+![ESP32 zSocket](pictures/zmqESP32.png)
