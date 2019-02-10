@@ -1,4 +1,4 @@
-# zmqSocket ZMTP3 mini implementation
+# zmqSocket ZMTP3.0 mini implementation
   ZMTP3-SUB/PUB Python/Arduino-C++<br/>
   使用Python/Arduino sockets模擬ZMTP3-PUB/SUB的Greeting/Handshake並發送接收訂閱資料
   <br/>
