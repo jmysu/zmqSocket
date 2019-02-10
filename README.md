@@ -11,10 +11,11 @@
   <br/>
   ![Detecting zPeers](pictures/zmtpDetectingPeers.png)
   <br/>
+  <br/>
 ## Python sockets as subscriber <---> Pyzmq as publisher
 ## Python sockets as publisher <---> Pyzmq as subscriber
-訂閱端 只使用 sockets (sktSub.py) <---> (zmqPub.py) 派送端 用Pyzmq 發送 <br/>
-派送端 只使用 sockets (sktPub.py) <---> (zmqSub.py) 訂閱端 用Pyzmq 發送 <br/>
+訂閱端 sockets only (sktSub.py) w/o libZmq <---> (zmqPub.py) 派送端 w/ Pyzmq <br/>
+派送端 sockets only (sktPub.py) w/o libZmq <---> (zmqSub.py) 訂閱端 w/ Pyzmq <br/>
 <br/>
 
 ### ZMQ-PUB Python Simulation
@@ -32,5 +33,5 @@ Subscriber: color in blue
 ![SocketSub](pictures/zmqSocketSubWireshark.png)
 
 ### (NEW) ESP32 project works for ZMTP3 Publish
-ESP32 using Arduino WiFiClient to send ZMTP3 messages...
+ESP32 uses Arduino WiFiClient to send ZMTP3 messages...
 ![ESP32 zSocket](pictures/zmqESP32.png)
