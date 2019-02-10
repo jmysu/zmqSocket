@@ -8,7 +8,9 @@
 - [minimum zmtp stuff](https://github.com/zeromq/zmtp/tree/master/zmtp30/C)
 - [zmtp Wireshark dissector](https://github.com/whitequark/zmtp-wireshark/blob/master/zmtp-dissector.lua)
 - [zmtp RFC spec](https://rfc.zeromq.org/spec:23/ZMTP/)
-
+  <br/>
+  ![Detecting zPeers](pictures/zmtpDetectingPeers.png)
+  <br/>
 ## Python sockets as subscriber <---> Pyzmq as publisher
 ## Python sockets as publisher <---> Pyzmq as subscriber
 訂閱端 只使用 sockets (sktSub.py) <---> (zmqPub.py) 派送端 用Pyzmq 發送 <br/>
