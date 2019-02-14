@@ -12,7 +12,7 @@
   ![Detecting zPeers](pictures/zmtpDetectingPeers.png)
   <br/>
   <br/>
-## Python sockets as subscriber <---> Pyzmq as publisher
+## Python sockets as subscriber (for single publisher) <---> Pyzmq as publisher
 ## Python sockets as publisher <---> Pyzmq as subscriber
 訂閱端  sockets only (sktSub.py) w/o Pyzmq <---> (zmqPub.py) w/ Pyzmq  派送端 <br/> 
 派送端  sockets only (sktPub.py) w/o Pyzmq <---> (zmqSub.py) w/ Pyzmq  訂閱端 <br/> 
